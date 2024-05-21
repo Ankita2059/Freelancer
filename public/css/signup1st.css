@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header span {
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    color: rgb(19, 158, 51);
+    font-size: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border: 2px solid grey;
+    margin: 0px 20px;
+    border-radius: 15px;
+}
+
+.box:hover {
+    cursor: pointer;
+    border-color: green;
+    background-color: rgb(244, 244, 244);
+}
+
+img {
+    height: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.box a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.box p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid black;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-left: 210px;
+    margin-top: -22px;
+}
+
+main {
+    position: relative;
+
+}
+
+.create-btn {
+    margin-top: 30px;
+
+    display: flex;
+}
+
+button {
+    margin: auto;
+    cursor: pointer;
+    /* position: absolute; */
+    padding: 10px 30px;
+    /* margin-top: 60px;
+   margin-left: 505px; */
+    background-color: rgb(216, 221, 217);
+    border: none;
+    color: rgb(167, 165, 165);
+    border-radius: 2rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p span {
+    color: rgb(19, 158, 51);
+    text-decoration: underline;
+    cursor: pointer;
+}
