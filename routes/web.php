@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccountController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.dashboard');
-});
+Route::get('/',[AccountController::class,'home'])->name('home');
 
-Route::view('/login', 'account.login')->name('login');
-Route::view('/signup1','account.signup1st')->name('client-freelancer');
-Route::view('/signupc','account.signupclient')->name('signUp-client');
-Route::view('/signupf','account.signupfreelancer')->name('signUp-freelancer');
+Route::get('/login', [AccountController::class,'loginView'])->name('login');
+Route::get('/signup1',[AccountController::class,'signUpOption'])->name('client-freelancer');
+Route::get('/signupc',[AccountController::class,'signUpClient'])->name('signUp-client');
+Route::get('/signupf',[AccountController::class,'signUpFreelancer'])->name('signUp-freelancer');
+
 
 
