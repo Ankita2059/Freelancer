@@ -22,11 +22,11 @@ body {
     width: 100%;
 }
 
+
  .header .container .logo span {
-    font-size: 35px;
+    font-size:30px;
     font-weight:600;
     color: var(--warning-color); 
-    padding-left: -30px; 
 }
 
 .header .container{
@@ -44,8 +44,12 @@ body {
 
 .navigation ul{
     display: flex;
-    padding-top: 20px;
+    padding-top: 10px;
+    list-style-type: none;
+    overflow: hidden;
+
 }
+
 .navigation ul li{
     list-style: none;
 }
@@ -60,8 +64,38 @@ body {
 
 .navigation ul li a:hover {
     color:var(--warning-color); 
+    background-color: #f4efef;
 }
 
+li .fprojects-dropdown {
+    display: inline-block;
+  }
+
+  .fprojects-dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    min-width: 640px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.fprojects-dropdown-content a{
+    color: black;
+    padding:20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.fprojects-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.fprojects-dropdown:hover .fprojects-dropdown-content {
+    display: block;
+  }
 
 .support-links ul{
     display: flex;

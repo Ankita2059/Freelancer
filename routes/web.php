@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('layouts.dashboard');
 });
 
-Route::view('/login','login')->name('login');
-Route::view('/signup1','signup1st')->name('client-freelancer');
-Route::view('/signupc','signupclient')->name('signUp-client');
-Route::view('/signupf','signupfreelancer')->name('signUp-freelancer');
+Route::view('/login', 'account.login')->name('login');
+Route::view('/signup1','account.signup1st')->name('client-freelancer');
+Route::view('/signupc','account.signupclient')->name('signUp-client');
+Route::view('/signupf','account.signupfreelancer')->name('signUp-freelancer');
 
 

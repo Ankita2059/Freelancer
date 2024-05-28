@@ -1,109 +1,92 @@
+:root {
+    --primary-color:#000000;
+    --light-color:#ffffff;
+    --warning-color: #03951d;
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
 }
 
-header span {
-    position: relative;
-    top: 20px;
+header{
+    color: var(--warning-color);
+    margin-top: 20px;
     margin-left: 30px;
-    color: rgb(19, 158, 51);
-    font-size: 20px;
-
 }
 
-h1 {
+header h1{
+    color: var(--warning-color);
+    font-size: 17px;
+}
+
+main{
+    border: 3px solid  rgb(249, 246, 246);
+    padding: 20px; 
+    margin: 50px auto; 
+    max-width: 600px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 28px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 
 .box {
-    position: relative;
     width: 250px;
-    height: 150px;
-    border: 2px solid grey;
-    margin: 0px 20px;
-    border-radius: 15px;
+    height: 100px;
+    margin: 0 20px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 .box:hover {
     cursor: pointer;
-    border-color: green;
     background-color: rgb(244, 244, 244);
 }
 
-img {
-    height: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-
-.box a {
+.container-text a {
     text-decoration: none;
     color: var(--primary-color);
+    padding-right: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    /* font-weight: 500; */
+}
+.container-text a:hover{
+    color: var(--warning-color);
 }
 
+
+/* 
 .box p{
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 40px;
     font-size: 20px;
     font-weight: 500;
+} */
+
+main .btn.btn-outline-success{
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    width: 80%;
+    margin-left: 3.5rem;
 }
 
-.circle {
-    position: absolute;
-    border: 1px solid black;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    margin-left: 210px;
-    margin-top: -22px;
-}
-
-main {
-    position: relative;
-
-}
-
-.create-btn {
-    margin-top: 30px;
-
-    display: flex;
-}
-
-button {
-    margin: auto;
-    cursor: pointer;
-    /* position: absolute; */
-    padding: 10px 30px;
-    /* margin-top: 60px;
-   margin-left: 505px; */
-    background-color: rgb(216, 221, 217);
-    border: none;
-    color: rgb(167, 165, 165);
-    border-radius: 2rem;
-}
-
-p {
+p{
     text-align: center;
-    margin-top: 20px;
-}
-
-p span {
-    color: rgb(19, 158, 51);
-    text-decoration: underline;
-    cursor: pointer;
+    padding-top: 10px;
 }
