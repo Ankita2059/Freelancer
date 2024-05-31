@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <h1>Creatives Genius</h1>
+        <a href="{{route('home')}}" style="text-decoration: none"><h1>Creative Genius</h1></a> 
         <div class="left-side">
           <span>Looking for work?</span>
           <a href="{{route('signUp-freelancer')}}" class="apply-signup">Apply as a Talent</a>   

@@ -14,7 +14,7 @@
 </head>
 <body>
             <header>
-                <h1>Creatives Genius</h1>
+                <a href="{{route('home')}}" style="text-decoration: none"><h1>Creative Genius</h1></a> 
             </header>
         <main>    
             <h2>Login to Creatives Genius</h2>

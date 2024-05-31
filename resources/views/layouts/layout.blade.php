@@ -18,11 +18,11 @@
             <header class="header">
                 <div class="container">
                     <div class="logo">
-                        <span>Logo</span>
+                        <a href="{{route('home')}}" style="text-decoration: none"><span>Creative Genius</span></a>
                     </div>
                     <nav class="navigation">
-                        <ul>
-                            <li><a href="#">Home</a></li>
+                        <ul class="navbar">
+                            {{-- <li><a href="#">Home</a></li> --}}
                             <li class="fprojects-dropdown">
                                 <a href="#" class="fprojects-dropbtn">Finding Projects</a>
                                 <div class="fprojects-dropdown-content">
@@ -37,14 +37,21 @@
                             <li><a href="#">Tips for Success</a></li>
                             <li><a href="#">Safety & Security</a></li>
                             <li><a href="#">Community & Support</a></li>
-                            <li><a href="#">Conclusion</a></li>&nbsp &nbsp &nbsp
+                            <li><a href="#">Conclusion</a></li>
                         </ul>
-                        <img src="{{asset('images/searchicon.png')}}" alt="searchicon-png" height="60px" width="60px">
-                        <a href="{{route('login')}}"  class="btn btn-outline-success">Log In</a> &nbsp &nbsp
-                        <a href="{{route('client-freelancer')}}" class="btn btn-outline-success" >Sign Up</a>    
                     </nav>
+
+
+                    <div class="header-btn">
+                        <a href="{{route('login')}}"  class="btn btn-outline-success" id="login-btn">Log In</a>
+                        <a href="{{route('client-freelancer')}}" class="btn btn-outline-success" id="signup-btn">Sign Up</a>    
+                        <img src="{{asset('images/menubar.svg')}}" alt="MenuBarlogo" class="bx Menubar">
+                    </div>
+
+                
+
                 </div>
-                {{-- <a href="{{route('login')}}"class="btn btn-outline-success"> Login</a> --}}
+
                 <hr class="separator">
                 <div class="support-links">
                     <ul>
@@ -56,8 +63,7 @@
                 </div>
             </header>
 
-            {{--  --}}
-            <main>
+            <main> 
                 @yield('content')
             </main>
 
@@ -80,7 +86,7 @@
                 </div>
 
                 <div class="lower-part">
-                    <div class="container">
+                    <div class="fcontainer">
                         <h4>About</h4>
                         <ul>
                             <li>
@@ -92,7 +98,7 @@
                         </ul>
                     </div>
 
-                    <div class="container">
+                    <div class="fcontainer">
                         <h4>Categories</h4>
                         <ul>
                             <li>
@@ -126,7 +132,7 @@
                         </ul>
                     </div>
 
-                    <div class="container">
+                    <div class="fcontainer">
                         <h4>Support</h4>
                         <ul>
                             <li>
@@ -147,7 +153,7 @@
                         </ul>
                     </div>
 
-                    <div class="container">
+                    <div class="fcontainer">
                         <h4>Subscribe</h4>
                         <div class="input-group  mb-3 w-150" style="padding-left: 25px">
                             <input type="text" class="form-control  " placeholder="Your Email here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -165,9 +171,19 @@
                         </ul>    
                     </div>
                 </div>
-            </footer>
-     
-     
+            </footer>   
 
+            <script>
+                let menu = document.querySelector('.Menubar');
+                let navbar = document.querySelector('.navbar');
+
+                menu.onclick =() => {
+                    menu.classList.toggle("bx-x");
+                    navbar.classList.toggle("open");
+
+                }
+
+            </script>
+     
 </body>
 </html>

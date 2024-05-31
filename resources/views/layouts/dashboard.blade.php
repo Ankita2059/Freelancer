@@ -22,14 +22,14 @@
             <section class="youthcontent"> 
                 <img src="{{asset('images/youth.jpg')}}" alt="youth-image" height="500px" width="750px">
                 <div class="description">
-                    <h2>How new youth earning money in India?</h1>
+                    <h2>How new youth earning money in India?</h2>
                     <p>In recent years,Indian youth have been increasingly turning to freelancing to earn
                         money and gain professional experience. Platforms like Creative Genius have become a 
                         cornerstone in this shift,offering young talents an opportunity to connect with 
                         clients globally and work on diverse projects.
                     </p>
                     <br>
-                    <button type="button" class="btn btn-success">Explore More</button>
+                    <button type="button" class="btn btn-success">Explore More</button>  
                 </div>
             </section>
 
