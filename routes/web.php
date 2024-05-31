@@ -17,19 +17,7 @@ use App\Http\Controllers\AccountController;
 */
 
 Route::get('/',[AccountController::class,'home'])->name('home');
-
-Route::get('/login', [AccountController::class,'loginView'])->name('login');
-Route::get('/signup1',[AccountController::class,'signUpOption'])->name('client-freelancer');
-Route::get('/signupc',[AccountController::class,'signUpClient'])->name('signUp-client');
-Route::get('/signupf',[AccountController::class,'signUpFreelancer'])->name('signUp-freelancer');
-
-<<<<<<< HEAD
-Route::get('/',[AccountController::class,'home'])->name('home');
 Route::get('/login',[AccountController::class,'loginView'])->name('login');
 Route::get('/signup1',[AccountController::class,'signUpOption'])->name('client-freelancer');
 Route::get('/signupc',[AccountController::class,'signUpClient'])->name('signUp-client');
 Route::get('/signupf',[AccountController::class,'signUpFreelancer'])->name('signUp-freelancer');
-=======
->>>>>>> b6d8c5150175620a198460ad9d54760d415c0a79
-
-
