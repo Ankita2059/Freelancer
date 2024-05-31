@@ -134,7 +134,7 @@ body {
             right: 0px;
         }
 
-        .navigation ul li a { na vaye tyo zip ma upload v
+        .navigation ul li a { 
             font-size: 15px;
             text-align: left;
         }
@@ -144,7 +144,12 @@ body {
         }
 
         .youthcontent h2{
+            font-size: 30px;
             
+        }
+
+        .youthcontent p{
+            font-size: 15px;
         }
 
        
@@ -270,6 +275,11 @@ li .fprojects-dropdown {
 .youthcontent .description p {
     width: 80%;
     margin-top: 5%;
+}
+
+.youthcontent img{
+    height: 500px;
+    width: 750px;
 }
 
 /* services */

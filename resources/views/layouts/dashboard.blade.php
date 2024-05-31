@@ -20,7 +20,7 @@
 
                 
             <section class="youthcontent"> 
-                <img src="{{asset('images/youth.jpg')}}" alt="youth-image" height="500px" width="750px">
+                <img src="{{asset('images/youth.jpg')}}" alt="youth-image">
                 <div class="description">
                     <h2>How new youth earning money in India?</h2>
                     <p>In recent years,Indian youth have been increasingly turning to freelancing to earn
